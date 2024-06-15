@@ -121,7 +121,7 @@
     height: auto;
     margin: 0.5rem;
     padding: 1rem;
-    background-color: #1f1ff1;
+    background-color: #1ff19a;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -142,7 +142,7 @@
   footer {
     width: 100%;
     height: 5rem;
-    background-color: #17033c;
+    background-color: #5025a0;
     display: flex;
     justify-content: center;
     align-items: center;
