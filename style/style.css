@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  body {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: #040405;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .header h1 {
+    color: #d7dbfd;
+    text-shadow: 0 0 4px #0f0e0e;
+    text-align: center;
+  }
+  
+  .photo-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .photo-text img {
+    width: 35%;
+    border-radius: 0.7rem;
+    -webkit-border-radius: 0.7rem;
+    -moz-border-radius: 0.7rem;
+    -ms-border-radius: 0.7rem;
+    -o-border-radius: 0.7rem;
+  }
+  
+  .photo-text p {
+    text-align: center;
+    padding: 0.8rem;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    line-height: 1.1rem;
+  }
+  
+  .menu-bar {
+    margin: 1rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .menu-bar > .bx-menu {
+    font-weight: 400;
+    font-size: 2rem;
+  }
+  
+  .menu-bar > .bx-menu:hover {
+    font-weight: 600;
+    border-radius: 5px;
+  }
+  
+  main {
+    width: 100%;
+    height: auto;
+    background-color: #3e51ff;
+    padding: 1rem;
+    background-color: #969696;
+  }
+  
+  .projects {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+  }
+  
+  .container-projects {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .projects h2 {
+    font-size: 1.8rem;
+    margin: 1rem;
+  }
+  
+  .project {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .project p {
+    font-size: 1.2rem;
+  }
+  
+  .project h3 {
+    font-size: 1.4rem;
+  }
+  
+  .container-projects > .card {
+    width: 85%;
+    height: auto;
+    margin: 0.5rem;
+    padding: 1rem;
+    background-color: #1f1ff1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    gap: 1rem;
+  }
+  
+  .card img {
+    width: 48%;
+  }
+  
+  footer {
+    width: 100%;
+    height: 5rem;
+    background-color: #17033c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .navbar-social-networks {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: #fff;
+    list-style: none;
+    gap: 1rem;
+  }
+  
+  .navbar-social-networks > li > a {
+    color: #fff;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+  }
+  
+  .navbar-social-networks > li > a:hover {
+    color: #9436ff;
+    text-shadow: 0 0 2px #fff;
+  }
+  
+  @media screen and (min-width: 319px) and (max-width: 767px) {
+    body {
+      width: 100%;
+      max-width: 100%;
+    }
+    .header {
+      width: 100%;
+    }
+  
+    main {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    body {
+      width: 100%;
+      font-size: 25px;
+    }
+  
+    .header {
+      display: flex;
+      justify-content: space-around;
+    }
+  
+    .photo-text p {
+      font-size: 2rem;
+      line-height: 2.5rem;
+    }
+  
+    .projects h2 {
+      font-size: 2rem;
+    }
+  
+    .container-projects {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
+    }
+  
+    .container-projects > .card {
+      height: 20rem;
+      margin: 1.5rem;
+      border-radius: 1.5rem;
+      -webkit-border-radius: 1.5rem;
+      -moz-border-radius: 1.5rem;
+      -ms-border-radius: 1.5rem;
+      -o-border-radius: 1.5rem;
+    }
+  
+    .navbar-social-networks {
+      font-size: 2.5rem;
+      gap: 2rem;
+    }
+  }
+  
+  @media screen and (min-width: 1280px) {
+    .header h1 {
+      font-size: 4.5rem;
+    }
+  
+    .photo-text p {
+      font-size: 2.8rem;
+      line-height: 3.5rem;
+    }
+  
+    .photo-text img {
+      width: 20%;
+    }
+  
+    .projects h2 {
+      font-size: 2.8rem;
+    }
+  
+    .container-projects {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      justify-items: center;
+    }
+  
+    .container-projects > .card {
+      height: auto;
+      margin: 1.5rem;
+    }
+  
+    .navbar-social-networks {
+      font-size: 2.5rem;
+      gap: 5rem;
+    }
+  
+    .project p {
+      font-size: 1.8rem;
+    }
+  
+    .project h3 {
+      font-size: 2rem;
+    }
+  }
+  
